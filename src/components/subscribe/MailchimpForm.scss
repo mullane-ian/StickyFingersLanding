@@ -1,0 +1,78 @@
+.MyForm {
+  line-height: 1.6em;
+  font-size: 0.8em;
+  color:var(--white);
+  width: 400px;
+  max-width: 100vw;
+
+  margin: auto;
+
+  border-radius: 3em;
+  padding: 15px;
+
+  max-width: 80vw;
+  background: var(--white);
+  color: white;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.error-text {
+  padding: 10px;
+  color: var(--darkBlue);
+}
+
+.success-text {
+  padding: 10px;
+  color: rgb(96, 214, 28);
+}
+.sending-text {
+  padding: 10px;
+  color: var(--lightblue)
+}
+.MyForm button {
+  font-size: 1.2em;
+
+  font-family: "Russo One", sans-serif;
+  background: var(--lightBlue);
+  height: 3em;
+  width: 6em;
+  color: var(--lightPink);
+  border-radius: 25em;
+  margin: 1em;
+  padding: 0;
+  border: none;
+}
+
+.MyForm input {
+  
+  font-size: 1.2em;
+  color: var(--darkBlue) !important;
+  height: 1em;
+  width: 14em;
+  border-radius: 25em;
+  background-color: var(--pink);
+  margin: 1em;
+  margin-right: 0;
+  padding: 1em;
+  border: none;
+  color: var(--white) !important;
+}
+
+
+#root > div > div.MyForm > div > button{
+ 
+}
+
+
+.page3{
+  flex-direction: column-reverse;
+}
