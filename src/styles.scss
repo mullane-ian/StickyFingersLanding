@@ -4,10 +4,14 @@
   margin: 0;
 }
 
+
 body {
+ 
   padding: 0;
   margin: 0;
-  background: var(--pink);
+  background: #9a8c98;
+  overflow-x:hidden !important;
+
 }
 
 .App {
@@ -17,7 +21,7 @@ body {
 
 /*! locomotive-scroll v4.1.0 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
  html.has-scroll-smooth {
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 html.has-scroll-dragging {
@@ -99,6 +103,16 @@ html.has-scroll-dragging {
   bottom: 0;
 } 
 
+.page1{
+ flex-direction:column;  
+
+  
+}
+.logo{
+  z-index: -4;
+  max-height: 50vh;
+  max-width: 100vw;
+}
 
 .page2{
   border: 10px solid white !important;
@@ -108,10 +122,48 @@ html.has-scroll-dragging {
   border: 10px solid white !important;
 }
 
+.mailing-list-header{
+  color: var(--white);
+  padding: 10px;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+
+}
+.mailing-lolli{
+  color: var(--white);
+
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  color: var(--white)
+}
+.sticky-contact{
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+}
+.sticky-contact span:hover{
+  color: var(--pink)
+}
+
+
 
 
 @media screen and (max-width:1000px){
 
+
+  .main-line{
+    transform: translateY(100px);
+    font-size: 30px !important;
+    width: 100vw !important;
+  }
 
   .page1{
     flex-direction: column;
@@ -128,6 +180,47 @@ html.has-scroll-dragging {
   }
 }
 
+.dispos-link{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.dispos-link:hover{
+  color: var(--pink);
+
+}
+
+.my-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 20px;
+  margin: 20px;
+  border-radius: 50px;
+}
+.my-form-container > img{
+  height: 100px;
+  width: 100px;
+}
+
+
+.nav-container{
+
+  display: flex;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: fixed;
+  height: 5vh;
+  width: 100vw;
+  align-items: flex-start;
+  
+
+
+}
+
+
+
 @media screen and (min-width:1001px){
   .page3{
     padding-top: 200px;
@@ -135,3 +228,5 @@ html.has-scroll-dragging {
 
   }
 }
+
+

@@ -1,0 +1,114 @@
+.menu-btn__burger{
+  margin-top: 10px !important;
+  
+  font-weight: bolder;
+
+  cursor: pointer;
+  z-index: 1000000000000 !important;
+  }
+
+.menu-btn{
+  display: flex;
+  width: 100vw !important;
+}
+  
+.menu-btn__burger:hover {
+  background-color: #383538;
+  color: white;
+  }
+  .menu-btn {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  
+  .Sidebar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 0;
+    
+    text-align: center;
+    border-right: 20px solid var(--white);
+    z-index: 100;
+  }
+  
+  .Items {
+    list-style-type: none;
+    padding: 0;
+  
+  
+  }
+  
+  .Items li {
+    transform: translateY(-100px);
+      font-size: 3em;
+    margin: 50px;
+    cursor: pointer;
+    color: white !important;
+    
+  }
+
+  .item:hover{
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+
+  }
+
+
+@media screen and (max-width:1001px){
+  .Sidebar{
+    width: 100vw;
+  }
+
+}
